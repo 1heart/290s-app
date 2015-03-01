@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E3808062-4450-45E2-A00D-807A3B3ADE8D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ArtOverflow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6AD2CDD6E183D3FCD3C9DCA6D5FE4DD40038899D</key>
+		<string>https://github.com/1heart/290s-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ArtOverflow.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6AD2CDD6E183D3FCD3C9DCA6D5FE4DD40038899D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/1heart/290s-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6AD2CDD6E183D3FCD3C9DCA6D5FE4DD40038899D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6AD2CDD6E183D3FCD3C9DCA6D5FE4DD40038899D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ArtOverflow</string>
+		</dict>
+	</array>
+</dict>
+</plist>
