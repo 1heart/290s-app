@@ -19,4 +19,8 @@ class Question {
         self.details = details
     }
     
+    func helloWorld(){
+        print("Hello")
+    }
+    
 }
