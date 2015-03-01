@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915806E71AA3CCF30031021F /* InitialLoginViewController.swift */; };
 		ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5C01A9108420091A1E6 /* AppDelegate.swift */; };
 		ED75D5C31A9108420091A1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5C21A9108420091A1E6 /* ViewController.swift */; };
 		ED75D5C61A9108420091A1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C41A9108420091A1E6 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		915806E71AA3CCF30031021F /* InitialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialLoginViewController.swift; sourceTree = "<group>"; };
 		ED75D5BB1A9108420091A1E6 /* ArtOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75D5BF1A9108420091A1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED75D5C01A9108420091A1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				ED75D5C01A9108420091A1E6 /* AppDelegate.swift */,
 				EDC2764C1A910EC300F62C30 /* QuestionTableViewCell.swift */,
+				915806E71AA3CCF30031021F /* InitialLoginViewController.swift */,
 				ED75D5C21A9108420091A1E6 /* ViewController.swift */,
 				EDC276501A911B5600F62C30 /* DetailViewController.swift */,
 				ED75D5C41A9108420091A1E6 /* Main.storyboard */,
@@ -223,6 +226,7 @@
 			files = (
 				EDC2764D1A910EC300F62C30 /* QuestionTableViewCell.swift in Sources */,
 				EDC2764F1A9110A900F62C30 /* Question.swift in Sources */,
+				915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */,
 				EDC276511A911B5600F62C30 /* DetailViewController.swift in Sources */,
 				ED75D5C31A9108420091A1E6 /* ViewController.swift in Sources */,
 				ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */,

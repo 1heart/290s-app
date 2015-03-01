@@ -47,16 +47,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        let question = QuestionArray[indexPath.row]
-        
-        var detailViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
-        
-        detailViewController.detailTitleString = question.title
-        detailViewController.detailAuthorString = question.author
-        detailViewController.detailDescriptionString = question.details
-        
-        self.presentViewController(detailViewController, animated: true, completion:nil)
-        
     }
 
 }
