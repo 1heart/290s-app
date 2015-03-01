@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OQF-pH-ifA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OQF-pH-ifA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -68,98 +68,15 @@
             </objects>
             <point key="canvasLocation" x="990" y="786"/>
         </scene>
-        <!--Art overflow-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ArtOverflow" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mF2-1h-XyY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="QuestionCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" rowHeight="121" id="KED-I1-VsT" customClass="QuestionTableViewCell" customModule="ArtOverflow" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KED-I1-VsT" id="y7B-U6-kzc">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="title" text="Title of Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-93-qSm">
-                                                    <rect key="frame" x="18" y="8" width="280" height="24"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="asker" text="Question Asker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gm-hE-S9Z">
-                                                    <rect key="frame" x="18" y="40" width="118" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="details" text="Question details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-MK-KRX">
-                                                    <rect key="frame" x="18" y="77" width="284" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="CDS-93-qSm" firstAttribute="top" secondItem="y7B-U6-kzc" secondAttribute="topMargin" constant="3" id="0il-zY-QYq"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CDS-93-qSm" secondAttribute="trailing" constant="12" id="1d5-nD-N1H"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dbP-MK-KRX" secondAttribute="trailing" constant="8" id="IIm-GD-xQR"/>
-                                                <constraint firstItem="1Gm-hE-S9Z" firstAttribute="top" secondItem="CDS-93-qSm" secondAttribute="bottom" constant="8" id="M0u-uf-vgA"/>
-                                                <constraint firstItem="dbP-MK-KRX" firstAttribute="top" secondItem="1Gm-hE-S9Z" secondAttribute="bottom" constant="16" id="m81-HN-eOL"/>
-                                                <constraint firstItem="1Gm-hE-S9Z" firstAttribute="leading" secondItem="y7B-U6-kzc" secondAttribute="leadingMargin" constant="12" id="mJg-gV-8dB"/>
-                                                <constraint firstItem="CDS-93-qSm" firstAttribute="leading" secondItem="y7B-U6-kzc" secondAttribute="leadingMargin" constant="12" id="vgn-nj-E0V"/>
-                                                <constraint firstItem="dbP-MK-KRX" firstAttribute="leading" secondItem="y7B-U6-kzc" secondAttribute="leadingMargin" constant="12" id="wlj-O5-auD"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="QuestionAuthor" destination="1Gm-hE-S9Z" id="YQ9-rT-aja"/>
-                                            <outlet property="QuestionDetails" destination="dbP-MK-KRX" id="D0b-vi-DTu"/>
-                                            <outlet property="QuestionTitle" destination="CDS-93-qSm" id="dN8-I2-qzN"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Ngg-Lv-Mgf"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="y6o-i9-JYv"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mF2-1h-XyY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="G7Y-zV-R3g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mF2-1h-XyY" secondAttribute="trailing" constant="-16" id="ZwH-hv-6tb"/>
-                            <constraint firstItem="mF2-1h-XyY" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="dWI-Fg-kei"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="mF2-1h-XyY" secondAttribute="bottom" id="q13-hf-Aqr"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Art overflow" id="1ST-pO-EG4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lU9-8O-MIK"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="mF2-1h-XyY" id="SRr-Th-V6f"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="115" y="129"/>
-        </scene>
-        <!--View Controller-->
+        <!--Initial Login View Controller-->
         <scene sceneID="YSD-Lt-XJV">
             <objects>
-                <viewController id="OQF-pH-ifA" sceneMemberID="viewController">
+                <viewController id="OQF-pH-ifA" customClass="InitialLoginViewController" customModule="ArtOverflow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vm2-S5-CNg"/>
                         <viewControllerLayoutGuide type="bottom" id="jhr-0y-9Eu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dj1-du-s8F" customClass="InitialLoginViewController">
+                    <view key="view" contentMode="scaleToFill" id="dj1-du-s8F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -178,9 +95,6 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" red="0.41814864309999999" green="0.72075452299999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="loginButtonAction:" destination="dj1-du-s8F" eventType="touchUpInside" id="7d7-gX-fSk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co9-wD-8J3">
                                 <rect key="frame" x="130" y="367" width="61" height="34"/>
@@ -199,18 +113,18 @@
                                     <constraint firstAttribute="height" constant="128" id="p4Y-tJ-k3z"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
-                                <rect key="frame" x="96" y="269" width="128" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="zGd-98-hSb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-7P-Fjv">
                                 <rect key="frame" x="96" y="307" width="128" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="REq-pA-Nac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
+                                <rect key="frame" x="96" y="269" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="zGd-98-hSb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -231,11 +145,11 @@
                             <constraint firstItem="MH6-47-u4E" firstAttribute="top" secondItem="OfL-T8-wmc" secondAttribute="bottom" constant="36" id="sxJ-9g-6Gm"/>
                             <constraint firstAttribute="centerX" secondItem="OfL-T8-wmc" secondAttribute="centerX" id="yRM-b5-fMC"/>
                         </constraints>
-                        <connections>
-                            <outlet property="PasswordField" destination="lYZ-7P-Fjv" id="v4h-vl-8nt"/>
-                            <outlet property="UsernameField" destination="7Tj-gM-18I" id="ZZA-3b-eXV"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="lYZ-7P-Fjv" id="agF-4L-xqD"/>
+                        <outlet property="userField" destination="7Tj-gM-18I" id="aB5-Zz-dP8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQR-f8-M2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
