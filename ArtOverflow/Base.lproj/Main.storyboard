@@ -2,72 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OQF-pH-ifA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
-        <scene sceneID="Zhu-VJ-Knt">
-            <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="R85-bZ-DXk" customClass="DetailViewController" customModule="ArtOverflow" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zJj-Fb-qgo"/>
-                        <viewControllerLayoutGuide type="bottom" id="q0R-U7-AYm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zo1-dq-KmY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyK-sl-gJd">
-                                <rect key="frame" x="16" y="44" width="288" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-kG-D2p">
-                                <rect key="frame" x="16" y="88" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQp-ah-YNr">
-                                <rect key="frame" x="16" y="117" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-Yz-3tN">
-                                <rect key="frame" x="16" y="154" width="117" height="30"/>
-                                <state key="normal" title="Answer Question">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="t1x-Yz-3tN" firstAttribute="top" secondItem="zQp-ah-YNr" secondAttribute="bottom" constant="16" id="6Y3-Cc-fKE"/>
-                            <constraint firstItem="IIl-kG-D2p" firstAttribute="top" secondItem="LyK-sl-gJd" secondAttribute="bottom" constant="8" id="6lR-T2-PRl"/>
-                            <constraint firstItem="IIl-kG-D2p" firstAttribute="trailing" secondItem="zo1-dq-KmY" secondAttribute="trailingMargin" id="9BR-nT-LOk"/>
-                            <constraint firstItem="t1x-Yz-3tN" firstAttribute="leading" secondItem="zo1-dq-KmY" secondAttribute="leadingMargin" id="KJo-QY-GvF"/>
-                            <constraint firstItem="LyK-sl-gJd" firstAttribute="trailing" secondItem="zo1-dq-KmY" secondAttribute="trailingMargin" id="NAn-xM-cpu"/>
-                            <constraint firstItem="LyK-sl-gJd" firstAttribute="top" secondItem="zJj-Fb-qgo" secondAttribute="bottom" constant="8" id="Z5Y-8u-jsH"/>
-                            <constraint firstItem="zQp-ah-YNr" firstAttribute="top" secondItem="IIl-kG-D2p" secondAttribute="bottom" constant="8" id="cGb-Ox-F24"/>
-                            <constraint firstItem="zQp-ah-YNr" firstAttribute="trailing" secondItem="zo1-dq-KmY" secondAttribute="trailingMargin" id="j8D-NX-yWS"/>
-                            <constraint firstItem="LyK-sl-gJd" firstAttribute="leading" secondItem="zo1-dq-KmY" secondAttribute="leadingMargin" id="ovc-qX-LpA"/>
-                            <constraint firstItem="zQp-ah-YNr" firstAttribute="leading" secondItem="zo1-dq-KmY" secondAttribute="leadingMargin" id="qQ0-6B-iJq"/>
-                            <constraint firstItem="IIl-kG-D2p" firstAttribute="leading" secondItem="zo1-dq-KmY" secondAttribute="leadingMargin" id="xVn-Y1-jqM"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="n6q-yN-N08"/>
-                    <connections>
-                        <outlet property="detailAuthor" destination="IIl-kG-D2p" id="dQa-yB-2W7"/>
-                        <outlet property="detailDescription" destination="zQp-ah-YNr" id="nhN-mE-h1k"/>
-                        <outlet property="detailTitle" destination="LyK-sl-gJd" id="7Q1-Ia-97N"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eQK-af-v5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="990" y="786"/>
-        </scene>
         <!--Initial Login View Controller-->
         <scene sceneID="YSD-Lt-XJV">
             <objects>
