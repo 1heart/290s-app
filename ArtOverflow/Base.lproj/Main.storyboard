@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OQF-pH-ifA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="OQF-pH-ifA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -154,12 +154,12 @@
         <!--View Controller-->
         <scene sceneID="YSD-Lt-XJV">
             <objects>
-                <viewController id="OQF-pH-ifA" sceneMemberID="viewController">
+                <viewController id="OQF-pH-ifA" customClass="InitialLoginViewController" customModule="ArtOverflow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vm2-S5-CNg"/>
                         <viewControllerLayoutGuide type="bottom" id="jhr-0y-9Eu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dj1-du-s8F" customClass="InitialLoginViewController">
+                    <view key="view" contentMode="scaleToFill" id="dj1-du-s8F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -178,9 +178,6 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" red="0.41814864309999999" green="0.72075452299999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="loginButtonAction:" destination="dj1-du-s8F" eventType="touchUpInside" id="7d7-gX-fSk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co9-wD-8J3">
                                 <rect key="frame" x="130" y="367" width="61" height="34"/>
@@ -199,18 +196,18 @@
                                     <constraint firstAttribute="height" constant="128" id="p4Y-tJ-k3z"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
-                                <rect key="frame" x="96" y="269" width="128" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="zGd-98-hSb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-7P-Fjv">
                                 <rect key="frame" x="96" y="307" width="128" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="REq-pA-Nac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
+                                <rect key="frame" x="96" y="269" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="zGd-98-hSb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -231,11 +228,11 @@
                             <constraint firstItem="MH6-47-u4E" firstAttribute="top" secondItem="OfL-T8-wmc" secondAttribute="bottom" constant="36" id="sxJ-9g-6Gm"/>
                             <constraint firstAttribute="centerX" secondItem="OfL-T8-wmc" secondAttribute="centerX" id="yRM-b5-fMC"/>
                         </constraints>
-                        <connections>
-                            <outlet property="PasswordField" destination="lYZ-7P-Fjv" id="v4h-vl-8nt"/>
-                            <outlet property="UsernameField" destination="7Tj-gM-18I" id="ZZA-3b-eXV"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="lYZ-7P-Fjv" id="agF-4L-xqD"/>
+                        <outlet property="userField" destination="7Tj-gM-18I" id="aB5-Zz-dP8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQR-f8-M2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

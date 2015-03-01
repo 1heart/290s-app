@@ -9,11 +9,13 @@
 import UIKit
 
 class InitialLoginViewController: UIViewController {
-    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        passwordField.secureTextEntry = true
+//        passwordField.secureTextEntry = true
         // Do any additional setup after loading the view.
     }
 

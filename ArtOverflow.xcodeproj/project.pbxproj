@@ -9,14 +9,10 @@
 /* Begin PBXBuildFile section */
 		915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915806E71AA3CCF30031021F /* InitialLoginViewController.swift */; };
 		ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5C01A9108420091A1E6 /* AppDelegate.swift */; };
-		ED75D5C31A9108420091A1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5C21A9108420091A1E6 /* ViewController.swift */; };
 		ED75D5C61A9108420091A1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C41A9108420091A1E6 /* Main.storyboard */; };
 		ED75D5C81A9108420091A1E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C71A9108420091A1E6 /* Images.xcassets */; };
 		ED75D5CB1A9108420091A1E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C91A9108420091A1E6 /* LaunchScreen.xib */; };
 		ED75D5D71A9108420091A1E6 /* ArtOverflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5D61A9108420091A1E6 /* ArtOverflowTests.swift */; };
-		EDC2764D1A910EC300F62C30 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2764C1A910EC300F62C30 /* QuestionTableViewCell.swift */; };
-		EDC2764F1A9110A900F62C30 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC2764E1A9110A900F62C30 /* Question.swift */; };
-		EDC276511A911B5600F62C30 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC276501A911B5600F62C30 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +30,12 @@
 		ED75D5BB1A9108420091A1E6 /* ArtOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75D5BF1A9108420091A1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED75D5C01A9108420091A1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED75D5C21A9108420091A1E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED75D5C51A9108420091A1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED75D5C71A9108420091A1E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED75D5CA1A9108420091A1E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED75D5D01A9108420091A1E6 /* ArtOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75D5D51A9108420091A1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED75D5D61A9108420091A1E6 /* ArtOverflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtOverflowTests.swift; sourceTree = "<group>"; };
-		EDC2764C1A910EC300F62C30 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
-		EDC2764E1A9110A900F62C30 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		EDC276501A911B5600F62C30 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				ED75D5C01A9108420091A1E6 /* AppDelegate.swift */,
-				EDC2764C1A910EC300F62C30 /* QuestionTableViewCell.swift */,
 				915806E71AA3CCF30031021F /* InitialLoginViewController.swift */,
-				ED75D5C21A9108420091A1E6 /* ViewController.swift */,
-				EDC276501A911B5600F62C30 /* DetailViewController.swift */,
 				ED75D5C41A9108420091A1E6 /* Main.storyboard */,
-				EDC2764E1A9110A900F62C30 /* Question.swift */,
 				ED75D5C91A9108420091A1E6 /* LaunchScreen.xib */,
 				ED75D5C71A9108420091A1E6 /* Images.xcassets */,
 				ED75D5BE1A9108420091A1E6 /* Supporting Files */,
@@ -224,11 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC2764D1A910EC300F62C30 /* QuestionTableViewCell.swift in Sources */,
-				EDC2764F1A9110A900F62C30 /* Question.swift in Sources */,
 				915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */,
-				EDC276511A911B5600F62C30 /* DetailViewController.swift in Sources */,
-				ED75D5C31A9108420091A1E6 /* ViewController.swift in Sources */,
 				ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
