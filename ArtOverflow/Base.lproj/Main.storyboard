@@ -163,44 +163,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
-                                <rect key="frame" x="92" y="269" width="136" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-7P-Fjv">
-                                <rect key="frame" x="92" y="307" width="136" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artflux" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH6-47-u4E">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artflux" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH6-47-u4E">
                                 <rect key="frame" x="120" y="223" width="81" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pi-MK-97E">
-                                <rect key="frame" x="128" y="345" width="65" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pi-MK-97E">
+                                <rect key="frame" x="137" y="345" width="46" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="5Rm-wF-sHh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Log in">
-                                    <color key="titleColor" red="0.16822239216520726" green="0.1436975756295977" blue="0.89450555098684215" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.41814864309999999" green="0.72075452299999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="dj1-du-s8F" eventType="touchUpInside" id="7d7-gX-fSk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co9-wD-8J3">
-                                <rect key="frame" x="118" y="375" width="84" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co9-wD-8J3">
+                                <rect key="frame" x="130" y="367" width="61" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="DUb-jt-4jE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.16822239216520726" green="0.1436975756295977" blue="0.89450555098684215" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.41814864309999999" green="0.72075452299999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-T8-wmc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-60" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-T8-wmc">
                                 <rect key="frame" x="96" y="59" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="RqI-op-4OJ"/>
+                                    <constraint firstAttribute="height" constant="128" id="p4Y-tJ-k3z"/>
+                                </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-gM-18I">
+                                <rect key="frame" x="96" y="269" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="zGd-98-hSb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYZ-7P-Fjv">
+                                <rect key="frame" x="96" y="307" width="128" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="REq-pA-Nac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OfL-T8-wmc" firstAttribute="top" secondItem="Vm2-S5-CNg" secondAttribute="bottom" constant="39" id="3pV-62-N9S"/>
+                            <constraint firstAttribute="centerX" secondItem="lYZ-7P-Fjv" secondAttribute="centerX" id="FGJ-QI-INv"/>
+                            <constraint firstItem="co9-wD-8J3" firstAttribute="top" secondItem="0pi-MK-97E" secondAttribute="bottom" constant="-12" id="P9B-OA-NXW"/>
+                            <constraint firstAttribute="centerX" secondItem="MH6-47-u4E" secondAttribute="centerX" id="Q2O-BY-l6W"/>
+                            <constraint firstItem="0pi-MK-97E" firstAttribute="top" secondItem="lYZ-7P-Fjv" secondAttribute="bottom" constant="8" id="bT9-Gj-vYo"/>
+                            <constraint firstAttribute="centerX" secondItem="co9-wD-8J3" secondAttribute="centerX" id="dck-7n-Jnp"/>
+                            <constraint firstItem="lYZ-7P-Fjv" firstAttribute="top" secondItem="7Tj-gM-18I" secondAttribute="bottom" constant="8" id="f83-Xz-86p"/>
+                            <constraint firstAttribute="centerX" secondItem="0pi-MK-97E" secondAttribute="centerX" id="g2Y-07-42q"/>
+                            <constraint firstItem="7Tj-gM-18I" firstAttribute="top" secondItem="MH6-47-u4E" secondAttribute="bottom" constant="8" id="gsg-qe-RAV"/>
+                            <constraint firstAttribute="centerX" secondItem="7Tj-gM-18I" secondAttribute="centerX" id="pnW-th-H0p"/>
+                            <constraint firstItem="MH6-47-u4E" firstAttribute="top" secondItem="OfL-T8-wmc" secondAttribute="bottom" constant="36" id="sxJ-9g-6Gm"/>
+                            <constraint firstAttribute="centerX" secondItem="OfL-T8-wmc" secondAttribute="centerX" id="yRM-b5-fMC"/>
+                        </constraints>
                         <connections>
                             <outlet property="PasswordField" destination="lYZ-7P-Fjv" id="v4h-vl-8nt"/>
                             <outlet property="UsernameField" destination="7Tj-gM-18I" id="ZZA-3b-eXV"/>
@@ -212,6 +242,9 @@
             <point key="canvasLocation" x="-294" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-60" width="800" height="800"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
