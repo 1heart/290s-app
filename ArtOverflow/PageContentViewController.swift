@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageContentViewController: UIViewController, UIPageViewControllerDataSource {
+class PageContentViewController: UIViewController {
     
     @IBOutlet weak var labelOutlet: UILabel!
 
