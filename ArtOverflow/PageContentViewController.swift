@@ -1,5 +1,5 @@
 //
-//  InitialLoginViewController.swift
+//  PageContentViewController.swift
 //  ArtOverflow
 //
 //  Created by Yixin on 3/1/15.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class InitialLoginViewController: UIViewController {
-    @IBOutlet weak var userField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+class PageContentViewController: UIViewController, UIPageViewControllerDataSource {
     
-    
+    @IBOutlet weak var labelOutlet: UILabel!
+
     override func viewDidLoad() {
-        passwordField.secureTextEntry = true
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
@@ -24,15 +23,6 @@ class InitialLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "loginSegue") {
-            
-        }
-    }
-    @IBAction func doLoginAction(sender: AnyObject) {
-        performSegueWithIdentifier("loginSegue", sender:sender)
-    }
 
     /*
     // MARK: - Navigation

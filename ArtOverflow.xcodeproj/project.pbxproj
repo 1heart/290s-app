@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915806E71AA3CCF30031021F /* InitialLoginViewController.swift */; };
+		91D375531AA3E78700A7234C /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D375521AA3E78700A7234C /* PageContentViewController.swift */; };
 		ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75D5C01A9108420091A1E6 /* AppDelegate.swift */; };
 		ED75D5C61A9108420091A1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C41A9108420091A1E6 /* Main.storyboard */; };
 		ED75D5C81A9108420091A1E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED75D5C71A9108420091A1E6 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		915806E71AA3CCF30031021F /* InitialLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialLoginViewController.swift; sourceTree = "<group>"; };
+		91D375521AA3E78700A7234C /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		ED75D5BB1A9108420091A1E6 /* ArtOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED75D5BF1A9108420091A1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED75D5C01A9108420091A1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				ED75D5C01A9108420091A1E6 /* AppDelegate.swift */,
 				915806E71AA3CCF30031021F /* InitialLoginViewController.swift */,
+				91D375521AA3E78700A7234C /* PageContentViewController.swift */,
 				ED75D5C41A9108420091A1E6 /* Main.storyboard */,
 				ED75D5C91A9108420091A1E6 /* LaunchScreen.xib */,
 				ED75D5C71A9108420091A1E6 /* Images.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D375531AA3E78700A7234C /* PageContentViewController.swift in Sources */,
 				915806E81AA3CCF30031021F /* InitialLoginViewController.swift in Sources */,
 				ED75D5C11A9108420091A1E6 /* AppDelegate.swift in Sources */,
 			);
